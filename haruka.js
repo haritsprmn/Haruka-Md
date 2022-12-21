@@ -47,7 +47,7 @@ if (global.db) global.db.data = {
 }
 
 function title() {
-    console.log(chalk.bold.green(figlet.textSync('HRStorexCODExJS', {
+    console.log(chalk.bold.green(figlet.textSync('HRStorexCODE', {
         font: 'Standard',
         horizontalLayout: 'default',
         verticalLayout: 'default',
