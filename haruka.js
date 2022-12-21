@@ -47,20 +47,20 @@ if (global.db) global.db.data = {
 }
 
 function title() {
-    console.log(chalk.bold.green(figlet.textSync('HRStorexCODE', {
+    console.log(chalk.bold.green(figlet.textSync('HRXCODE', {
         font: 'Standard',
         horizontalLayout: 'default',
         verticalLayout: 'default',
         width: 80,
         whitespaceBreak: false
     })))
-    console.log(chalk.yellow(`\n${chalk.yellow('Created By Harits Ofc')}\n`))
+    console.log(chalk.yellow(`\n${chalk.yellow('Created By HR - BOT')}\n`))
 }
 
     const haruka = harukaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Haruka Multi Device','Safari','1.0.0'],
+        browser: ['HR store-Bot','Safari','1.0.0'],
         auth: state
     })
 	title() 
@@ -185,7 +185,7 @@ function title() {
             else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startHaruka(); }
             else haruka.end(`Unknown DisconnectReason: ${reason}|${connection}`)
         }
-        console.log('Connect, Welcome Owner')
+        console.log('Connect, Welcome HR-BOT')
     })
 
     haruka.ev.on('creds.update', saveState)
